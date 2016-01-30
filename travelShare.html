@@ -16,23 +16,39 @@
 	<link href="main.css" type="text/css" rel="stylesheet"/>	
 </head>
 <body>
-<img itemprop="image" alt="Expedia.com" src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&amp;siteid=1" onerror="this.src='https://www.expedia.com/_dms/header/logo.png?locale=en_US&amp;siteid=1';this.onerror='';this.setAttribute('style','');" style="font-size:0;" border="0">		
-	<form class="container" name="returnForm">
-  <div class="form-group">
-    <label for="Flying">Flying From</label>
-    <input type="text" <input onClick="this.select();" value="Sample Text" class="form-control" id="flyingFrom" placeholder="Flying">
-  </div>
-  <div class="form-group">
-    <label for="departureDate">Departure</label>
-    <input type="date" class="form-control" id="departureDate" placeholder="Departure">
-  </div>
-  <div class="form-group">
-    <label for="Return">Return To</label>
-    <input type="date" class="form-control" id="returnTo" placeholder="Return">
-  </div>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+	<nav>
+		<div id = "logo">
+			<img itemprop="image" alt="Expedia.com" src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&amp;siteid=1" onerror="this.src='https://www.expedia.com/_dms/header/logo.png?locale=en_US&amp;siteid=1';this.onerror='';this.setAttribute('style','');" style="font-size:0;" border="0">		
+		</div>
+	</nav>
+<form class="container" name="returnForm" >	
+	<div class ="row">
+		<div class="form-group">
+			<h1 id ="trip" > Customize [User's] trip to [Japan]! </h1>
+		</div>
+	</div>
+	<div class="row"> 
+		<div class="form-group col-xs-2 col-md-offset-5">
+			<label for="Flying">Flying from</label>
+			<input type="text" <input onClick="this.select();" class="form-control" id="flyingFrom" >
+			</div>
+		</div>
+	<div class="row">
+		<div class="form-group col-xs-2 col-md-offset-4">
+			<label for="departureDate">Departure</label>
+			<input type="date" class="form-control" id="departureDate" class="form-control" value ="Departure" placeholder="Departure">
+		</div>
+		<div class="form-group col-xs-2">
+			<label for="Return">Return To</label>
+			<input type="date" class="form-control" id="returnTo" value ="Return" placeholder="Return">
+		</div>
+	</div>
+	<div class ="row">
+		<div class="form-group col-sm-2 col-md-offset-5">
+			<button type="submit" class="btn btn-default">Go!</button>
+		</div>
+	</div>	
+	</form>
 </body>
 
 
